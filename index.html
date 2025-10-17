@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptiVue - Lunettes Anti-Reflet</title>
+  <style>
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0f2f1, #ffffff);
+      color: #2e2e2e;
+    }
+
+    nav {
+      background-color: #263238;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .item:hover {
+      transform: translateY(-50px);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 3rem;
+    }
+
+    .item {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .item:hover {
+      transform: translateY(-30px);
+    }
+
+    .item img {
+      width: 100%;
+      height: 200px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .item .details {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .hero h3 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    .item h3 {
+      margin: 0.5rem 0;
+    }
+
+    .item .price {
+      color: #00796b;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+
+    .item .btn {
+      padding: 0.6rem 1.2rem;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background: #263238;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>OptiVue</h1>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Produits</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">A propos</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Lunettes Anti-Reflet avec Style</h2>
+    <h3>Chez Vision Ville Verte</h3>
+  </section>
+
+  <section class="products">
+    <div class="item">
+      <img src="data:image/jpeg;base64,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" alt="Lunettes Urban Black" />
+      <div class="details">
+        <h4>Urban Black</h4>
+        <p class="price">7500 FCFA</p>
+        <a href="#" class="btn">Commander</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMKZkflSMhBQYXpcCiAIPmWJSsG1diyRcV-g&s" alt="Lunettes Golden Chic" />
+      <div class="details">
+        <h3>Golden Chic</h3>
+        <p class="price">9 000 FCFA</p>
+        <a href="#" class="btn">Commander</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXw9Rb2bM3DLrrI7iNzk-zYmfV2vPLbVMJfA&s" alt="Lunettes Blue Vision" />
+      <div class="details">
+        <h4>Blue Vision</h4>
+        <p class="price">10 000 FCFA</p>
+        <a href="#" class="btn">Commander</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9itT8lqnlgOFbMaRN9FgFTx9rz1Z9cjRugQ&s" alt="Lunettes Retro Round" />
+      <div class="details">
+        <h4>Deux temps</h4 >
+        <p class="price">10 000 FCFA</p>
+        <a href="#" class="btn">Commander</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OptiVue. Vente de lunettes anti-reflet. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
